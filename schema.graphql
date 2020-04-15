@@ -1,0 +1,13 @@
+type Query {
+  photo(id: String!): Photo
+}
+
+extend type User @key(fields: "id") {
+  id: ID! @external
+  isPhotographer: Boolean!
+}
+
+type Photo @key(fields: "id") {
+  id: ID!
+  url: String!
+}

@@ -1,0 +1,9 @@
+bin
+obj
+output
+openssl
+secrets.json
+*.env
+!example.env
+*.pfx
+tempkey.rsa
